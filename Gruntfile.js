@@ -76,6 +76,28 @@ module.exports = function(grunt) {
     },
 
     /**
+     * @param {Object} sass - Task responsávle por compilar todoso os arquivos sass/scss em um arquivo css minificado
+     */
+    sass: {
+      main: {
+        options: {
+          style: 'compressed',
+          noCache: true,
+          sourcemap: 'file',
+        },
+        files: [
+          {
+            expand: true,
+            cwd: './src/sass',
+            src: ['*.scss'],
+            dest: 'build/arquivos',
+            ext: '.css',
+          },
+        ],
+      },
+    },
+
+    /**
      * @param {Object} pug - Task responsável por compilar todos os arquivos pug em HTML
      */
     pug: {
@@ -177,6 +199,11 @@ module.exports = function(grunt) {
         livereload: true,
       },
 
+      sass: {
+        files: ['src/**/*.scss'],
+        tasks: ['sass', 'autoprefixer'],
+      },
+
       pug: {
         files: ['src/**/*.pug'],
         tasks: ['pug'],
@@ -195,8 +222,8 @@ module.exports = function(grunt) {
   };
 
   const tasks = {
-    default: ['pug', 'browserify', 'connect', 'watch'],
-    min: ['browserify', 'uglify:dist', 'imagemin'],
+    default: ['sass', 'autoprefixer', 'pug', 'browserify', 'connect', 'watch'],
+    min: ['sass', 'autoprefixer', 'browserify', 'uglify:dist', 'imagemin'],
     build: ['min', 'pug'],
   };
 
