@@ -223,7 +223,7 @@ module.exports = function(grunt) {
 
   const tasks = {
     default: ['sass', 'autoprefixer', 'pug', 'browserify', 'connect', 'watch'],
-    min: ['sass', 'autoprefixer', 'browserify', 'uglify:dist', 'imagemin'],
+    min: ['sass', 'autoprefixer', 'browserify', 'uglify:dist'],
     build: ['min', 'pug'],
   };
 

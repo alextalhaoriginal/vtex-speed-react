@@ -1,0 +1,94 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add -D @babel/corE
+
+PATH: 
+  C:\Program Files\ImageMagick-7.0.8-Q16;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\PHP7;C:\ProgramData\ComposerSetup\bin;C:\Users\Raphael\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Users\Raphael\AppData\Roaming\npm;C:\Program Files\Genymobile\Genymotion\tools;C:\Users\Raphael\AppData\Local\Microsoft\WindowsApps;C:\Users\Raphael\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Raphael\AppData\Local\Yarn\bin;C:\Users\Raphael\AppData\Local\Programs\Fiddler;C:\Users\Raphael\AppData\Local\Android\Sdk\platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@babel%2fcorE: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65939:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140464:22)
+      at Request.emit (events.js:189:13)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141436:10)
+      at Request.emit (events.js:189:13)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141358:12)
+      at Object.onceWrapper (events.js:277:13)
+      at IncomingMessage.emit (events.js:194:15)
+      at endReadableNT (_stream_readable.js:1125:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "vtex-react",
+    "version": "4.0.0",
+    "description": "",
+    "accountName": "STORE-NAME",
+    "secureUrl": true,
+    "readmeFilename": "README.md",
+    "main": "gruntfile.js",
+    "scripts": {
+      "start": "grunt",
+      "build": "grunt build",
+      "lint": "eslint src/**/*.{js,ts,jsx,tsx}"
+    },
+    "keywords": [
+      "REACT JS",
+      "VTEX",
+      "REACT JS VTEX",
+      "PUG JS",
+      "VTEX BUILD",
+      "VTEX SPEED",
+      "REACT FOR VTEX",
+      "VTEX ES6",
+      "VTEX SASS"
+    ],
+    "author": "Raphael Corrêa",
+    "license": "MIT",
+    "devDependencies": {
+      "axios": "^0.18.0",
+      "babel-eslint": "^10.0.3",
+      "babelify": "^10.0.0",
+      "browserify": "^16.5.0",
+      "connect-http-please": "^0.3.0",
+      "dotenv": "^7.0.0",
+      "eslint": "6.1.0",
+      "eslint-config-airbnb": "^18.0.1",
+      "eslint-config-prettier": "^6.9.0",
+      "eslint-plugin-import": "2.18.2",
+      "eslint-plugin-jsx-a11y": "6.2.3",
+      "eslint-plugin-prettier": "^3.1.2",
+      "eslint-plugin-react": "7.14.3",
+      "eslint-plugin-react-hooks": "1.7.0",
+      "grunt": "^1.0.4",
+      "grunt-autoprefixer": "^3.0.4",
+      "grunt-browser-sync": "^2.2.0",
+      "grunt-browserify": "^5.3.0",
+      "grunt-contrib-connect": "^1.0.2",
+      "grunt-contrib-copy": "^1.0.0",
+      "grunt-contrib-pug": "^1.0.0",
+      "grunt-contrib-uglify": "^4.0.0",
+      "grunt-contrib-watch": "^1.1.0",
+      "grunt-sass": "^2.1.0",
+      "prettier": "^1.19.1",
+      "proxy-middleware": "^0.15.0",
+      "react": "^16.8.4",
+      "react-dom": "^16.8.4",
+      "reactify": "^1.0.0",
+      "serve-static": "^1.13.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
