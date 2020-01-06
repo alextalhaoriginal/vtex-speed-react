@@ -8,7 +8,8 @@
   "main": "gruntfile.js",
   "scripts": {
     "start": "grunt",
-    "build": "grunt build"
+    "build": "grunt build",
+    "lint": "eslint src/**/*.{js,ts,jsx,tsx}"
   },
   "keywords": [
     "REACT JS",
@@ -25,10 +26,19 @@
   "license": "MIT",
   "devDependencies": {
     "axios": "^0.18.0",
+    "babel-eslint": "^10.0.3",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "connect-http-please": "^0.3.0",
     "dotenv": "^7.0.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0",
     "grunt": "^1.0.4",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-browser-sync": "^2.2.0",
@@ -39,6 +49,7 @@
     "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^2.1.0",
+    "prettier": "^1.19.1",
     "proxy-middleware": "^0.15.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

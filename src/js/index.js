@@ -1,3 +1,3 @@
-import './modules/home'
+import './modules/home';
 
-import './modules/menu'
+import './modules/menu';
